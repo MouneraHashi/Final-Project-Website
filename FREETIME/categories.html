@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>FREETIME - Categories</title>
+    <title>FREETIME - Events</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/freetime.css">
 </head>
@@ -16,15 +16,15 @@
 
         <!-- Header Section -->
         <header>
-            <h1>Event Categories</h1>
+            <h1>Events in London</h1>
         </header>
 
         <!-- Main Navigation Menu -->
         <nav id="primarynav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="categories.html" class="current">Categories</a></li>
+                <li><a href="events.html" class="current">Events</a></li>
+                <li><a href="categories.html">Categories</a></li>
                 <li><a href="map.html">Event Map</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,13 +33,102 @@
         <!-- Categories Section -->
         <section>
             <h2>Filter Events by Category</h2>
-            <p>Looking for something specific? You can filter events by categories like budget-friendly options, family activities, or even events with better accessibility.</p>
             <ul>
-                <li><a href="#">Budget-Friendly</a></li>
-                <li><a href="#">Family-Friendly</a></li>
-                <li><a href="#">Accessible</a></li>
+                <li><button class="category-btn" onclick="showCategory('budget')">Budget-Friendly</button></li>
+                <li><button class="category-btn" onclick="showCategory('family')">Family-Friendly</button></li>
+                <li><button class="category-btn" onclick="showCategory('accessible')">Accessible</button></li>
             </ul>
+
+            <div id="budget" class="category-content">
+                <!-- Budget-Friendly Events -->
+                <article>
+                    <h3>Deer Spotting in Richmond Park</h3>
+                    <p>Get close to nature and enjoy a peaceful day in Richmond Park, where you can spot wild deer and other animals. Perfect for a relaxing day outdoors! <a href="https://www.royalparks.org.uk/parks/richmond-park" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Portobello Road Market</h3>
+                    <p>Explore the vibrant and historic Portobello Road Market, offering everything from antiques to fresh produce. It’s one of London’s best-known markets. <a href="https://www.portobellomarket.org" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Camden Lock Market</h3>
+                    <p>Visit Camden Lock Market for a unique shopping experience. Browse through fashion, food, art, and vintage items from around the world. <a href="https://www.camdenmarket.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
+
+            <div id="family" class="category-content">
+                <!-- Family-Friendly Events -->
+                <article>
+                    <h3>Toca Social - The Ultimate Football Experience</h3>
+                    <p>Enjoy football with friends at Toca Social in London. Tickets from £25. <a href="https://www.tocasocial.com" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Bubble Planet</h3>
+                    <p>Explore a world of bubbles! Fun for the whole family. <a href="https://www.bubbleplanet.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
+
+            <div id="accessible" class="category-content">
+                <!-- Accessible Events -->
+                <article>
+                    <h3>Frameless Immersive Art Experience</h3>
+                    <p>Experience art like never before with this immersive exhibition. <a href="https://www.frameless.com" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Game Over London</h3>
+                    <p>Play retro arcade games at Game Over London. Great for all ages! <a href="https://www.gameoverlondon.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
         </section>
     </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
+
+
+            <div id="budget" class="category-content">
+                <!-- Budget-Friendly Events -->
+                <article>
+                    <h3>Deer Spotting in Richmond Park</h3>
+                    <p>Get close to nature and enjoy a peaceful day in Richmond Park, where you can spot wild deer and other animals. Perfect for a relaxing day outdoors! <a href="https://www.royalparks.org.uk/parks/richmond-park" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Portobello Road Market</h3>
+                    <p>Explore the vibrant and historic Portobello Road Market, offering everything from antiques to fresh produce. It’s one of London’s best-known markets. <a href="https://www.portobellomarket.org" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Camden Lock Market</h3>
+                    <p>Visit Camden Lock Market for a unique shopping experience. Browse through fashion, food, art, and vintage items from around the world. <a href="https://www.camdenmarket.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
+
+            <div id="family" class="category-content">
+                <!-- Family-Friendly Events -->
+                <article>
+                    <h3>Toca Social - The Ultimate Football Experience</h3>
+                    <p>Enjoy football with friends at Toca Social in London. Tickets from £25. <a href="https://www.tocasocial.com" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Bubble Planet</h3>
+                    <p>Explore a world of bubbles! Fun for the whole family. <a href="https://www.bubbleplanet.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
+
+            <div id="accessible" class="category-content">
+                <!-- Accessible Events -->
+                <article>
+                    <h3>Frameless Immersive Art Experience</h3>
+                    <p>Experience art like never before with this immersive exhibition. <a href="https://www.frameless.com" target="_blank">Click here for more info</a></p>
+                </article>
+                <article>
+                    <h3>Game Over London</h3>
+                    <p>Play retro arcade games at Game Over London. Great for all ages! <a href="https://www.gameoverlondon.com" target="_blank">Click here for more info</a></p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
